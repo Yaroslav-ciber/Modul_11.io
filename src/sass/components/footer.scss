@@ -18,8 +18,8 @@
 .subscribe__submit {
     background: var(--main-color);
     border: 0;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    color: $color-wight;
+    font-family: $font-montserrat;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -32,25 +32,25 @@
     width: 230px;
     height: 40px;
     border: 1px solid #e7e7e7;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-size: 15px;
     line-height: 24px;
     padding-left: 12px;
 }
 
 .subscribe__input::placeholder {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-style: italic;
     font-size: 15px;
     line-height: 24px;
-    color: #cccccc;
+    color: #cfe5bc;
 }
 .subscribe__submit:hover {
     background: var(--main-hover-color);
 }
 .copyright {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-montserrat;
     font-size: 14px;
-    color: #333;
+    color: $color-h3-sections;
 }
 /* /Footer */

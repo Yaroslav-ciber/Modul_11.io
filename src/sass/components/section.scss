@@ -4,14 +4,16 @@
     margin: 0 auto;
 }
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-montserrat;
     font-weight: 700;
-    font-size: 30px;  
+    font-size: 30px;
+
 }
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-montserrat;
     font-weight: 400;
     font-size: 14px;
+    color:$color-h3-sections;
 }
 button {
     background: transparent;
@@ -22,17 +24,17 @@ button {
 .welcome-content {
     padding: 165px 0 230px;
     text-align: center;
-    color: #fff;
+    color: $color-text-section;
 }
 
 .welcome-content__text {
-    font-family: 'Kaushan Script', sans-serif;
+    font-family: $font-kaushan;
     font-size: 72px;
     margin-bottom: 60px;
 }
 
 .welcome-content__title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-montserrat;
     font-weight: 800;
     font-size: 150px;
     line-height: 140px;
@@ -41,18 +43,18 @@ button {
 }
 
 .welcome-content__button {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-montserrat;
     font-weight: 800;
     font-size: 15px;
-    color: #fff;
+    color:$color-wight;
     text-transform: uppercase;
-    border: 3px solid #fff;
+    border: 3px solid $color-wight;
     padding: 12px 30px;
     transition: all.2s linear;
 }
 
 .welcome-content__button:hover {
-    box-shadow: rgb(212, 122, 69)  3px 3px 15px;
+    box-shadow: $color-coral  3px 3px 15px;
 }
 
 /* /welcome */

@@ -9,7 +9,7 @@
     margin: 0 auto 95px;
     text-align: center;
     line-height: 24px;
-    color: #999;
+    color:$amazing-service-text;
 }
 
 .team-list {
@@ -84,7 +84,7 @@
 .social-list__link {
     width: 56px;
     height: 56px;
-    background-color: #fce38a;
+    background-color: $color-yallow;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color .2s linear, opacity .2s linear;
@@ -124,9 +124,9 @@ opacity: 1;
 }
 
 .team-content__text {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-roboto;
     font-weight: 300;
     font-style: italic;
-    color: #999;
+    color: $amazing-service-text;
 }
 /* /Who_we_are */
