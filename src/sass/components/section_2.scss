@@ -73,7 +73,7 @@
     display: flex;
     position: absolute;
     z-index: 5;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
@@ -116,6 +116,7 @@ opacity: 1;
 
 .team-content {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .team-content__title {
@@ -126,7 +127,7 @@ opacity: 1;
 .team-content__text {
     font-family: $font-roboto;
     font-weight: 300;
-    font-style: italic;
+    font-style: $font-style;
     color: $amazing-service-text;
 }
 /* /Who_we_are */

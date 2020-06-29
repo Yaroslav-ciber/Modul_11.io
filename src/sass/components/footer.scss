@@ -5,6 +5,7 @@
     border-top: 1px solid #e5e5e5;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .subscribe {
@@ -40,10 +41,10 @@
 
 .subscribe__input::placeholder {
     font-family: $font-roboto;
-    font-style: italic;
+    font-style: $font-style;
     font-size: 15px;
     line-height: 24px;
-    color: #cfe5bc;
+    color: $amazing-service-text;
 }
 .subscribe__submit:hover {
     background: var(--main-hover-color);

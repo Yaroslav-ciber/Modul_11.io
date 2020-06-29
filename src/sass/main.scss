@@ -1,15 +1,14 @@
-/*
- * Все паршалы импортировать в этот файл
- */
 
 @import './helpers/varieble.scss';
 @import './helpers/normalize.scss';
 @import 'base.scss';
+/*Content site*/ 
 @import './components/header.scss';
 @import './components/section.scss';
 @import './components/section_1.scss';
 @import './components/section_2.scss';
 @import './components/footer.scss';
-// @import '';
-// @import '';
+/*For mobile*/ 
+@import './helpers/retina.scss';
+@import './helpers/adaptyv.scss';
 // @import '';
