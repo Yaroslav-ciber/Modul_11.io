@@ -1,0 +1,21 @@
+@mixin srift ($family, $size, $weight, $font-col, $height, $upper: none) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $font-col;
+    line-height: $height;
+    text-transform: $upper;
+}
+
+@mixin dubl ($font, $weight, $size, $color ) {
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    color:$color;  
+}
+@mixin BTN ($bg, $bd, $pd, $cursor: pointer) {
+    background: $bg;
+    border: $bd;
+    padding: $pd;
+    cursor: $cursor;    
+}

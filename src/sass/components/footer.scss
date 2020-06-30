@@ -10,13 +10,10 @@
 
 .subscribe {
     display: flex;
-}
-
-.subscribe__form {
+    &__form {
     font-size: 0;
 }
-
-.subscribe__submit {
+    &__submit {
     background: var(--main-color);
     border: 0;
     color: $color-wight;
@@ -28,8 +25,7 @@
     cursor: pointer;
     transition: all.2s linear;
 }
-
-.subscribe__input {
+    &__input {
     width: 230px;
     height: 40px;
     border: 1px solid #e7e7e7;
@@ -37,17 +33,17 @@
     font-size: 15px;
     line-height: 24px;
     padding-left: 12px;
-}
-
-.subscribe__input::placeholder {
+    &::placeholder {
     font-family: $font-roboto;
     font-style: $font-style;
     font-size: 15px;
     line-height: 24px;
     color: $amazing-service-text;
 }
-.subscribe__submit:hover {
+}
+    &__submit:hover {
     background: var(--main-hover-color);
+}
 }
 .copyright {
     font-family: $font-montserrat;

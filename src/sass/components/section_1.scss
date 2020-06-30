@@ -6,17 +6,14 @@
 
 .titles {
     text-align: center;
-}
-
-.titles__text {
+    &__text {
     font-family: $font-kaushan;
     font-size: 24px;
     margin-bottom: 25px;
     display: inline-block;
     color: $color-sections;
 }
-
-.titles__title {
+    &__title {
     font-family: $font-montserrat;
     font-weight: 800;
     font-size: 30px;
@@ -24,10 +21,8 @@
     margin-bottom: 60px;
     position: relative;
     padding-bottom: 45px;
-    color: $color-sections;  
-}
-
-.titles__title::before {
+    color: $color-sections; 
+    &::before {
     content: '';
     bottom: 0;
     left: 50%;
@@ -36,42 +31,35 @@
     background-color: var(--main-hover-color);
     height: 3px;
     width: 60px;
-}
-
+}}}
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.services__item {
+    &__item {
     list-style: none;
     display: flex;
     flex-basis: 345px 
 }
-
-.services__item:not(:nth-last-child(-n+3)) {
+    &__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
-
-.services__item-icon {
+    &__item-icon {
     width: 90px;
     display: block;
 }
-
-.services__svg {
+    &__svg {
     width: 32px;
     height: 32px;
     fill: var(--main-color);
 }
-
-.services__title {
+    &__title {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
-.services__text {
+    &__text {
     line-height: 24px;
     color: $amazing-service-text;
+}
 }
 /* /Amazing Services */

@@ -25,24 +25,20 @@ button {
     padding: 165px 0 230px;
     text-align: center;
     color: $color-text-section;
-}
-
-.welcome-content__text {
+    &__text {
     font-family: $font-kaushan;
     font-size: 72px;
     margin-bottom: 60px;
 }
-
-.welcome-content__title {
+    &__title {
     font-family: $font-montserrat;
     font-weight: 800;
-    font-size: 150px;
-    line-height: 140px;
+    font-size: 60px;
+    line-height: 180px;
     text-transform: uppercase;
     margin-bottom: 125px;
 }
-
-.welcome-content__button {
+    &__button {
     font-family: $font-montserrat;
     font-weight: 800;
     font-size: 15px;
@@ -51,10 +47,7 @@ button {
     border: 3px solid $color-wight;
     padding: 12px 30px;
     transition: all.2s linear;
-}
-
-.welcome-content__button:hover {
+    &:hover {
     box-shadow: $color-coral  3px 3px 15px;
-}
-
+}}}
 /* /welcome */

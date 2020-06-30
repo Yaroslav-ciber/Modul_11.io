@@ -2,73 +2,59 @@
 .meet {
     padding-top: 95px;
     margin-bottom: 85px;
-}
-
-.meet__description {
+    &__description {
     max-width: 980px;
     margin: 0 auto 95px;
     text-align: center;
     line-height: 24px;
     color:$amazing-service-text;
 }
-
+}
 .team-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
-}
-
-.team-list__item {
+    &__item {
     flex-basis: 380px;
     list-style: none;
     position: relative;
     transition: all.2s linear;
 }
-
-.team-list__photo {
+    &__photo {
     max-height: 100%;
     max-width: 100%;
     position: relative;
     font-size: 0;
     margin-bottom: 30px;
-}
-
-.team-list__photo::before {
+    &::before {
+    @extend %procent;
+    @extend %marg;
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
     background: var(--main-color);
     z-index: -1;
-    top: 0;
-    left: 0;
 }
-
-.team-list__photo::after {
+&::after {
+    @extend %procent;
+    @extend %marg;
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(0deg, rgba(252,227,138,1) 0%, rgba(243,129,129,0.896796218487395) 100%);
     opacity: 0;
     transition: all.2s linear;
 }
-
-.team-list___img {
+}
+    &___img {
     transition: all.2s linear; 
 }
-
-.team-list__item:hover .team-list___img {
+    &__item:hover   &___img {
     transform: translate(-10px, -10px);
 }
-
-.team-list__item:hover .team-list__photo::after {
+    &__item:hover   &__photo::after {
     opacity: 1;
     transform: translate(-10px, -10px);
 }
-
+}
 .social-list {
     display: flex;
     position: absolute;
@@ -76,12 +62,10 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
-}
-.social-list__item {
+    &__item {
     list-style: none;
 }
-
-.social-list__link {
+    &__link {
     width: 56px;
     height: 56px;
     background-color: $color-yallow;
@@ -93,24 +77,19 @@
     justify-content: center;
     align-items: center;
 }
-
-.social-list__item:not(:last-child) .social-list__link {
+    &__item:not(:last-child)    &__link {
     border-right: 1px solid var(--main-hover-color);
 }
-
-.social-list__svg {
+    &__svg {
     fill: var(--main-hover-color);
 }
-
-.social-list__link:hover {
+    &__link:hover {
     background-color: var(--main-hover-color);
 }
-
-.social-list__link:hover .social-list__svg {
+    &__link:hover   &__svg {
     fill: #fff;
 }
-
-.team-list__item:hover .social-list__link {
+.team-list__item:hover  &__link {
 opacity: 1;
 }
 }
@@ -118,17 +97,15 @@ opacity: 1;
 .team-content {
     text-align: center;
     margin-bottom: 25px;
-}
-
-.team-content__title {
+    &__title {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
-.team-content__text {
+    &__text {
     font-family: $font-roboto;
     font-weight: 300;
     font-style: $font-style;
     color: $amazing-service-text;
+}
 }
 /* /Who_we_are */
