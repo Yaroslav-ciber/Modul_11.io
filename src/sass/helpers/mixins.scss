@@ -1,11 +1,3 @@
-@mixin srift ($family, $size, $weight, $font-col, $height, $upper: none) {
-    font-family: $family;
-    font-size: $size;
-    font-weight: $weight;
-    color: $font-col;
-    line-height: $height;
-    text-transform: $upper;
-}
 
 @mixin dubl ($font, $weight, $size, $color ) {
     font-family: $font;
@@ -19,3 +11,22 @@
     padding: $pd;
     cursor: $cursor;    
 }
+
+@mixin center-flex($type: 'all') {
+    display: flex;
+
+    @if $type== 'all' {
+        justify-content: center;
+        align-items: center;
+    }@else if $type== 'hor' {
+        justify-content: center;
+    }@else if $type== 'ver' {
+        align-items: center;
+    }
+}
+
+@mixin font--famili-weight ($type: 'all') {
+    font-family: $font-montserrat;
+    font-weight: 800;    
+}
+

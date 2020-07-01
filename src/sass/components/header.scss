@@ -3,10 +3,10 @@
     max-width: 100%;
 }
 .header__top {
+    @include center-flex('ver');
+    flex-wrap: wrap;
     padding-top: 30px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header__logo-type {
@@ -18,8 +18,8 @@
 /* Logo */
 /* NAV */
 .nav__list {
-    display: flex;
-    align-items: center;
+    @include center-flex('ver');
+    flex-wrap: wrap;
 }
 .nav__list-item {
     list-style: none;
