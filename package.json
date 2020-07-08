@@ -9,10 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/Yaroslav-ciber/Modul_11.git",
+  "homepage": "https://github.com/Yaroslav-ciber/Modul_11_update.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Yaroslav-ciber/Modul_11.git"
+    "url": "https://github.com/Yaroslav-ciber/Modul_11_update.git"
   },
   "author": "Yaroslav Snizhko <yasnizhko@gmail.com>",
   "license": "MIT",
